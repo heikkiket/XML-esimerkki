@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!ELEMENT elokuvalista ( elokuvat, soundtrackit ) >
+<!ELEMENT elokuvat ( elokuva+ ) >
+<!ELEMENT soundtrackit ( soundtrack+ ) >
+<!ELEMENT elokuva ( nimi, ohjaaja+, näyttelijät*, kesto, musiikki? ) >
+<!ELEMENT soundtrack ( stnimi ) >
+<!ATTLIST soundtrack id ID #REQUIRED>
+<!ELEMENT stnimi ( #PCDATA ) >
+<!ELEMENT nimi ( #PCDATA ) >
+<!ELEMENT ohjaaja ( #PCDATA ) >
+<!ELEMENT näyttelijät (näyttelijä+) >
+<!ELEMENT näyttelijä ( #PCDATA) >
+<!ELEMENT kesto ( #PCDATA ) >
+<!ELEMENT musiikki (säveltäjä+ ) >
+<!ELEMENT säveltäjä ( #PCDATA ) >
+<!ATTLIST säveltäjä soundtrackId IDREF #REQUIRED>
+
