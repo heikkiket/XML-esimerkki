@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<elokuvalista xmlns= "" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ElokuvalistaSchema.xsd">
+    <elokuvat>
+        <elokuva>
+            <nimi>Titanic</nimi>
+            <ohjaaja>James Cameron</ohjaaja>
+            <näyttelijät>
+                <näyttelijä>Kate Winslet</näyttelijä>
+                <näyttelijä>Leonardo DiCaprio</näyttelijä>
+            </näyttelijät>
+            <kesto>195</kesto>    
+        </elokuva>
+        <elokuva>
+            <nimi>Frozen</nimi>
+            <ohjaaja>Jennifer Lee</ohjaaja>
+            <ohjaaja>Chirs Buck</ohjaaja>
+            <näyttelijät>
+                <näyttelijä>Pirkko</näyttelijä>
+            </näyttelijät>
+            <kesto>109</kesto>
+        </elokuva>
+        <elokuva>
+            <nimi>1984</nimi>
+            <ohjaaja>Michael Radford</ohjaaja>
+            <näyttelijät>
+                <näyttelijä>John Hurt</näyttelijä>
+                <näyttelijä>Richard Burton</näyttelijä>
+                <näyttelijä>Suzanna Hamilton</näyttelijä>
+            </näyttelijät>
+            <kesto>113</kesto>    
+        </elokuva>
+        <elokuva>
+            <nimi>Leijonakuningas</nimi>
+            <ohjaaja>Jon Favreau</ohjaaja>
+            <näyttelijät>
+                <näyttelijä>Beyonce</näyttelijä>
+                <näyttelijä>Donald Glover</näyttelijä>
+            </näyttelijät>
+            <kesto>118</kesto>
+            <musiikki>
+                <säveltäjä soundtrackId="x098345">Elton John</säveltäjä>
+            </musiikki>
+        </elokuva>  
+        <elokuva>
+            <nimi>400 kepposta</nimi>
+            <ohjaaja>François Truffaut</ohjaaja>
+            <näyttelijät>
+                <näyttelijä>Jean-Pierre Léaud</näyttelijä>
+            </näyttelijät>
+            <kesto>95</kesto>    
+        </elokuva>
+    </elokuvat>
+    <soundtrackit>
+        <soundtrack id="x098345">
+            <stnimi>Musiikkia elokuvasta leijonakuningas</stnimi>
+        </soundtrack>
+    </soundtrackit>
+
+</elokuvalista>
