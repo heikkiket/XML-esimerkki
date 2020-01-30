@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<elokuvalista xmlns= "" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ElokuvalistaSchema.xsd">
+<elokuvalista xmlns= "" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="elokuvat_XmlSchema.xsd">
     <elokuvat>
         <elokuva>
             <nimi>Titanic</nimi>

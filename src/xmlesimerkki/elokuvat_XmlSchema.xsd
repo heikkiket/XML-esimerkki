@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <!-- Määritellään elementit elokuvan nimelle, ohjaajalle
+    sekä näyttelijälle -->
+    <xsd:element name = "nimi" type ="xsd:string"/>
+    <xsd:element name = "ohjaaja" type ="xsd:string"/>
+    <xsd:element name = "näyttelijä" type ="xsd:string"/>    
+    <xsd:element name = "kesto" type ="xsd:string"/>
+    <xsd:element name = "säveltäjä" type ="xsd:string"/> 
+    
+    <xsd:element name = "soundtrack">  
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base ="xsd:string">
+                    <xsd:attribute name="id" type="xsd:string"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name = "musiikki">
+        <xsd:sequence>
+            <xsd:element ref="säveltäjä"/>
+            <xsd:element ref="soundtrack"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    
+    
+    <!-- Määritellään kompleksityyppi näyttelijät
+    näyttelijöille -->
+    <xsd:complexType name = "näyttelijät">
+        <xsd:sequence>
+            <xsd:element ref="näyttelijä"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <!-- Määritellään kompleksityyppi elokuva, joka sisältää
+    edeltävät elementit sekä kompleksityypin --> 
+    <xsd:complexType name = "elokuvaTyyppi">
+        <xsd:sequence>
+            <xsd:element ref="nimi"/>
+            <xsd:element ref="ohjaaja"/>
+            <xsd:element ref="näyttelijät"/>
+        </xsd:sequence>
+    </xsd:complexType>
+        
+    <!-- Määritellään elementti elokuvat, toistamaan elementtiä
+    elokuva -->    
+    <xsd:element name= "elokuvat">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name = "elokuva" type = "elokuvaTyyppi"
+                             maxOccurs="unbounded/>            
+            </xsd:sequence>    
+        </xsd:complexType>
+    </xsd:element>
+</xs:schema>
